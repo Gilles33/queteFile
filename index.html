@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Multiple upload</title>
+</head>
+<body>
+
+<form action="list.php" method="post" enctype="multipart/form-data">
+    <label for="upload" class="label label-primary">Add Files:</label>
+    <input id="upload" type="file" name="upload[]" class="btn-primary btn-lg" multiple="multiple"/>
+    <input type="submit" name="submit" value="Send" class="btn-success btn-lg"/>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="list.php"></script>
+</body>
+</html>
